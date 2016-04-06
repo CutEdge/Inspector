@@ -1,3 +1,7 @@
+#This turns a Raspberry Pi 3 into a wifi access point.
+#Simply run this program from anywhere on the Raspberry Pi.
+#Source: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
+
 sudo apt-get install dnsmasq hostapd
 
 if [ -e /etc/dhcpcd.conf ]
