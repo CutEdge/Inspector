@@ -1,5 +1,6 @@
 #This turns a Raspberry Pi 3 into a wifi access point.
 #Simply run this program from anywhere on the Raspberry Pi.
+#By default, the ID is "Pi3-AP", password "raspberry", and the wifi network has a static IP address 172.24.1.1.
 #Source: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
 
 sudo apt-get install dnsmasq hostapd
