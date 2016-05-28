@@ -1,2 +1,6 @@
 # Inspector
 This contains the files needed to create an inspection camera that streams images by wifi, via browser, to any nearby device.
+
+I found it better to NOT install SimpleCV on the Raspberry Pi, because it's awfully slow. Instead, just send the stream of the camera image from the Raspberry Pi to its own wifi network, via http server. Then you can use a real computer to view the camera image live in a browser, or upload it to SimpleCV and analyze it. Analysis is better on my Dell running Debian 8. Then the question becomes, "why use a raspberry pi at all". If you're only using one camera, there's no point. Just hook your camera to the real computer. However, let's say you want to inspect 10 cameras from various points in a building. You don't have to buy a computer for every camera... just buy 10 raspberry pi's, and have them all connect to the same wifi network. Only one of them needs to have the access point. Or the main computer could have the access point. Either way, just have all the images stream by http on a local wifi network, and have a central computer process all of them.
+
+This way, each camera costs you under $100, complete with streaming. You could have a security system for a whole building for a few grand, I suppose.
